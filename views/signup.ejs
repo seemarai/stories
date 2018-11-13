@@ -3,15 +3,72 @@
 
 <head>
 <title>Sign up</title>
+<style>
+	input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+
 </head>
 
 
 <body>
-<form method="post" action="/signup">
-username: <input type="text" name='username' id="nameinput"/><br/>
-password: <input type="password" name='password' id="passwordinput"/><br/>
-confirm password: <input type="password" name='confirmpassword' id="conpassword"/><br/>
-<button id="myButton" type="submit">signup</button><br/>
+
+<h1 align="center">Signup for free!!!</h1><br/><br/>
+<div>
+  <form method="post" action="/signup">
+    <label for="fname">username</label>
+    <input type="text" name='username' id="nameinput">
+
+    <label for="lname">password</label>
+    <input type="password" name='password' id="passwordinput">
+
+    <label for="country">conform password</label>
+    <input type="password" name='confirmpassword' id="conpassword">
+
+   
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
 
 </form>
 

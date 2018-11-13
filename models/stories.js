@@ -10,4 +10,4 @@ const StorySchema = mongoose.Schema({
 	}
 });
 
-module.exports = mongoose.model('Stories', NoteSchema)
+module.exports = mongoose.model('Stories', StorySchema)

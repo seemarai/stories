@@ -6,6 +6,26 @@
     <style>
     	h1{font-size: 500%; text-align: center;}
     	p{font-size: 150%; text-align: center;}
+    	#txtbox
+    		{
+     			font-size:16pt;
+     			height:40px;
+     			width:500px;
+    		}
+
+    	.search
+    	{
+    		height:42px;
+    		width:60px;
+    		background-color: rgb(249, 249, 224);
+    	}
+
+    	.myButton
+    	{
+    		height:42px;
+    		width:60px;
+    		background-color: rgb(249, 249, 224);
+    	}
     	
 
 
@@ -13,9 +33,21 @@
 
 
   </head>
-  <body style="background:url(https://www.osv.com/Portals/4/EasyDNNnews/23720/23720hands.jpg);  background-size: 100% 200%;">
+  <body style="background:url(https://www.osv.com/Portals/4/EasyDNNnews/23720/23720hands.jpg);  background-size: 50% 200%;">
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <p>Write your own stories and share it!!!</p>
+    <p style="font-family: cursive; font-size: 20pt">Welcome to <%= title %></p>
+    <p style="font-family: cursive; font-size: 20pt">Write your own stories and share it!!!</p><br/>
+    <div align="center">
+ 		  		<input id="txtbox" type="text" placeholder="Search stories...">
+ 		  		<button class="search" type="submit">search</button>
+	</div><br/> <br/> <br/>
+
+	<div align="center">
+		<a href="http://localhost:3000/signup"> <button class="myButton" type="submit">signup</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://localhost:3000/login"> <button class="myButton" type="submit">login</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://localhost:3000/viewstories"> <button class="myButton" type="submit">stories</button></a>
+    
+	</div>
+	
   </body>
 </html>

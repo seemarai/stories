@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>wlit</title>
+<style>
+		body {background-color: powderblue; font-size: 150%;}
+		input {font-size: 150%; margin: 0 auto; size: 50%; }
+		button {
+    		
+    		font-size: 150%;
+			}
+
+</style>
+</head>
+
+
+<body>
+	<h1 align="center"> View stories</h1>
+	<% stories.forEach(function(story, i){ %>
+	<div><table><p><strong><%= story.title %> </strong> <br/><%= story.story%> </p></table></div>
+	<%})%>
+
+
+</body>
+
+
+</html>
+
